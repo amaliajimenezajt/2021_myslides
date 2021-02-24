@@ -1,0 +1,84 @@
+index
+========================================================
+author: Marta Ilundain
+date: 24/02/2021
+autosize: true
+font-import: https://fonts.googleapis.com/css?family=Caveat
+font-family: 'Caveat'
+css: custom.css
+
+ABOUT R PRESENTATION
+========================================================
+
+RPresentation is a special Markdown dialect used to create HTML presentations with RStudio.
+
+The file is saved with extension .Rpres and is compiled using RMarkdown and knitr packages.
+
+It generates two files .md and .html.
+The latter may be open in any web browser.
+
+RPresentation requires the knitr package (version 1.2 or higher)
+
+First slide
+========================================================
+incremental: false
+For more details on authoring R presentations please visit 
+[link] (https://support.rstudio.com/hc/en-us/articles/200486468)
+
+- Bullet 1 
+
+<li class="fragment fade-in"> Hello </li>
+
+- Bullet 2
+- Bullet 3
+
+Second slide
+========================================================
+type: exclaim
+We can see that code type is in red.
+
+{r}
+summary(cars)
+
+
+<code>
+- Bullet 4
+- Bullet 5
+</code>
+
+slide with code
+========================================================
+first column
+
+```r
+      1:10
+```
+
+```
+ [1]  1  2  3  4  5  6  7  8  9 10
+```
+      ***
+      second column
+
+```r
+(1:10)^2
+```
+
+```
+ [1]   1   4   9  16  25  36  49  64  81 100
+```
+
+slide with formula
+========================================================
+first column
+
+$$
+  \int_{-\infty}^ {\infty} e^{-x^2} \, dx = \sqrt{\pi}
+$$
+  
+  
+slide with histogram
+========================================================
+
+
+
